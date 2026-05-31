@@ -14,7 +14,7 @@ export default function Home() {
         <div className="summarycontent px-4 py-3 w-full md:w-[80%] animate-slideInLeft">
           <div className="font-bold text-lg">Hi I am</div>
           <div className="font-bold text-[#013571] text-2xl">
-            Dr. Mohammad Aftab Alam Ansari
+            Dr. Mohammad sumaiya Aftab Alam Ansari
           </div>
           <div className="font-bold text-lg">(Mechanical Engineer)</div>
           <div className="font-bold text-xl">
