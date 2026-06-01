@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <div className="summary mx-14 flex flex-col md:flex-row">
         <div className="summarycontent px-4 py-3 w-full md:w-[80%] animate-slideInLeft">
-          <div className="font-bold text-lg">Hi I am</div>
+          <div className="font-bold text-lg">Hi this is me</div>
           <div className="font-bold text-[#013571] text-2xl">
             Dr. Mohammad Aftab Alam Ansari
           </div>
