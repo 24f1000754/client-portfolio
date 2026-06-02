@@ -45,7 +45,7 @@ export default function Home() {
           entrepreneurial experiences through engagement at the Incubation center, I am committed to enriching the
           academic journey which promotes entrepreneurship. I aim to foster a dynamic educational experience by
           integrating practical and output-focused methodologies, aligning with the demands of the contemporary
-          entrepreneurial ecosystem.
+          entrepreneurial ecosystem.Thank you!
         </div>
       </div>
       <div className="interest my-[50px] flex flex-col md:flex-row">
