@@ -9,12 +9,11 @@ const page = () => {
 
       
       {/* Image Header */}
-      <img
-          className="w-[90vw] md:w-[85vw] lg:w-[60vw] h-auto object-cover mx-auto"
+     <img
+          className="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover"
           src="experience.jpg"
           alt="Experience Header"
         />
-
     
 
       {/* Content Section */}
