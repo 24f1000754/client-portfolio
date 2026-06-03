@@ -18,7 +18,7 @@ export default function Home() {
           </div>
           <div className="font-bold text-lg">(Mechanical Engineer)</div>
           <div className="font-bold text-xl">
-            Ph.D. Specialization: Additive Manufacturing
+            Ph.D. Specialization: Additive Manufacturing, Bone Tissue Engineering, Patient-Specicif Implant Design 
           </div>
           <div className="flex gap-2">
             <div><Linkedin /></div>
