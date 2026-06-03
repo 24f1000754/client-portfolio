@@ -5,7 +5,7 @@ import Bullets from '../components/Bullets';
 
 const page = () => {
   return (
-    <div className="bg-white pt-[26px] min-h-[100vh]">
+    <div className="bg-white pt-[26px] min-h-[70vh]">
 
       
       {/* Image Header */}
