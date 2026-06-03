@@ -1,25 +1,85 @@
-import React from 'react';
-import Heading from '../components/Heading';
-import Details from '../components/Details';
-import Bullets from '../components/Bullets';
+import React from "react";
+import Heading from "../components/Heading";
+import Details from "../components/Details";
+import Bullets from "../components/Bullets";
 
 const page = () => {
   return (
     <div className="bg-white pt-[26px] min-h-[70vh]">
-
-      
       {/* Image Header */}
-     <img
-          className="w-full h-[180px] md:h-[250px] lg:h-[300px] object-cover"
-          src="experience.jpg"
-          alt="Experience Header"
-        />
-    
+      <img
+        className="w-full h-[180px] md:h-[250px] lg:h-[300px] object-cover"
+        src="experience.jpg"
+        alt="Experience Header"
+      />
 
       {/* Content Section */}
       <div className="pt-2 px-4 sm:px-8 lg:px-16">
         <div>
           <Heading title="Experience" />
+
+          {/* IIT Bombay Experience */}
+          <div className="flex flex-col-reverse lg:flex-row gap-6 my-8">
+            {/* Left Image */}
+            <div className="lg:w-1/2 flex justify-center">
+              <img
+                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                src="/iit bombay.jpg"
+                alt="IIT Bombay"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="lg:w-1/2">
+              <div className="flex items-center gap-2 mt-3">
+                <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
+                <div className="font-bold text-lg sm:text-xl">
+                  Institute Post Doc Fellow (IPDF)
+                </div>
+              </div>
+
+              <div className="ml-8 text-sm sm:text-base">
+                Indian Institute of Technology (IIT) Bombay | [August 2025 -
+                Present]
+              </div>
+
+              <div className="my-3 space-y-2">
+                <Bullets title="Material formulation, design and bio-fabrication of composite scaffolds for Bone Tissue Engineering (BTE)." />
+              </div>
+            </div>
+          </div>
+          
+
+          {/* IISc Bangalore Experience */}
+          <div className="flex flex-col lg:flex-row gap-6 my-8">
+            {/* Left Content */}
+            <div className="lg:w-1/2">
+              <div className="flex items-center gap-2 mt-3">
+                <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
+                <div className="font-bold text-lg sm:text-xl">
+                  Project Associate
+                </div>
+              </div>
+
+              <div className="ml-8 text-sm sm:text-base">
+                Indian Institute of Science (IISc), Bangalore | [February 2025 -
+                May 2025]
+              </div>
+
+              <div className="my-3 space-y-2">
+                <Bullets title="Computational Fluid Dynamics (CFD) study of ceramic materials for medical applications." />
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="lg:w-1/2 flex justify-center">
+              <img
+                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                src="/iisc bangalore.jpg"
+                alt="IISc Bangalore"
+              />
+            </div>
+          </div>
 
           {/* First Experience Section */}
           <div className="flex flex-col lg:flex-row gap-6 my-8">
@@ -27,10 +87,13 @@ const page = () => {
             <div className="lg:w-1/2">
               <div className="flex items-center gap-2 mt-3">
                 <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
-                <div className="font-bold text-lg sm:text-xl">Manager (Research and Development)</div>
+                <div className="font-bold text-lg sm:text-xl">
+                  Manager (Research and Development)
+                </div>
               </div>
               <div className="ml-8 text-sm sm:text-base">
-                IIITD Innovation & Incubation Center, Delhi | [September 2023-November 2024]
+                IIITD Innovation & Incubation Center, Delhi | [September
+                2023-November 2024]
               </div>
               <div className="my-3 space-y-2">
                 <Bullets title="Established a state-of-the-art Innovation Lab worth ₹1.5 Crores, funded by DSIIDC & DST Delhi." />
@@ -45,7 +108,11 @@ const page = () => {
 
             {/* Right Column */}
             <div className="lg:w-1/2 flex justify-center">
-              <img className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]" src="iiitdelhi.jpg" alt="IIIT Delhi" />
+              <img
+                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                src="iiitdelhi.jpg"
+                alt="IIIT Delhi"
+              />
             </div>
           </div>
 
@@ -53,17 +120,24 @@ const page = () => {
           <div className="flex flex-col-reverse lg:flex-row gap-6 my-8">
             {/* Left Column */}
             <div className="lg:w-1/2 flex justify-center">
-              <img className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]" src="iiitdmj.jpg" alt="IIITDM Jabalpur" />
+              <img
+                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                src="iiitdmj.jpg"
+                alt="IIITDM Jabalpur"
+              />
             </div>
 
             {/* Right Column */}
             <div className="lg:w-1/2">
               <div className="flex items-center gap-2 mt-3">
                 <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
-                <div className="font-bold text-lg sm:text-xl">Teaching Assistantship and Lab Experience</div>
+                <div className="font-bold text-lg sm:text-xl">
+                  Teaching Assistantship and Lab Experience
+                </div>
               </div>
               <div className="ml-8 text-sm sm:text-base">
-                Indian Institute of Information Technology, Design & Manufacturing, Jabalpur | [June 2019-Dec 2023]
+                Indian Institute of Information Technology, Design &
+                Manufacturing, Jabalpur | [June 2019-Dec 2023]
               </div>
               <div className="my-3 space-y-2">
                 <Bullets title="Prepared teaching slides and taught “Engineering Graphics (EG)” to 1st year UG students." />
@@ -95,8 +169,3 @@ const page = () => {
 };
 
 export default page;
-
-
-
-
-
