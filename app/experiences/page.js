@@ -9,7 +9,11 @@ const page = () => {
 
       
       {/* Image Header */}
-      <img className="md:w-[100vw] md:h-[80vw] lg:w-full lg:h-auto object-cover h-[100vw] w-[100vw]" src="experience.jpg" alt="Experience Header" />
+      <img
+          className="w-[90vw] md:w-[85vw] lg:w-[80vw] h-auto object-cover mx-auto"
+          src="experience.jpg"
+          alt="Experience Header"
+        />
 
     
 
