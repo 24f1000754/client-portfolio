@@ -10,7 +10,7 @@ const page = () => {
       
       {/* Image Header */}
      <img
-          className="w-full h-[250px] md:h-[350px] lg:h-[450px] object-cover"
+          className="w-full h-[180px] md:h-[250px] lg:h-[300px] object-cover"
           src="experience.jpg"
           alt="Experience Header"
         />
