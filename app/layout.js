@@ -1,32 +1,42 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata = {
   title: "Dr. Md. Aftab Alam",
-  description: "M.E., Ph.D. Specialization: Additive Manufacturing",
+  description:
+    "Mechanical Engineer | Ph.D. Specialization: Additive Manufacturing, Bone Tissue Engineering & Patient-Specific Implant Design",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${playfair.variable}
+          ${inter.variable}
+          antialiased
+          bg-[#F8F5EC]
+          text-[#1A1A1A]
+          font-[var(--font-inter)]
+        `}
       >
-        <Navbar/>
-        {children}
-        <Footer/>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
