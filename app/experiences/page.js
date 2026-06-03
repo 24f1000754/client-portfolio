@@ -5,9 +5,13 @@ import Bullets from '../components/Bullets';
 
 const page = () => {
   return (
-    <div className="bg-white pt-[56px] min-h-[100vh]">
+    <div className="bg-white pt-[26px] min-h-[100vh]">
+
+      
       {/* Image Header */}
       <img className="md:w-[100vw] md:h-[80vw] lg:w-full lg:h-auto object-cover h-[100vw] w-[100vw]" src="experience.jpg" alt="Experience Header" />
+
+    
 
       {/* Content Section */}
       <div className="pt-2 px-4 sm:px-8 lg:px-16">
