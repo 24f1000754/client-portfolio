@@ -5,7 +5,7 @@ import Orcid from "./components/Orcid";
 
 export default function Home() {
   return (
-    <div className="bg-[#d1f18f]  text-[#1A1A1A] pt-[56px]">
+    <div className="bg-[#d8fdb1]  text-[#1A1A1A] pt-[56px]">
 
       {/* Hero Banner */}
       <div
