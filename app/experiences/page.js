@@ -5,25 +5,50 @@ import Bullets from "../components/Bullets";
 
 const page = () => {
   return (
-    <div className="bg-[#F8F5EC] pt-[26px] min-h-screen">
-      {/* Image Header */}
-      <img
-        className="w-full h-[180px] md:h-[250px] lg:h-[300px] object-cover"
-        src="experience.jpg"
-        alt="Experience Header"
-      />
+    <div className="bg-[#d1f18f] pt-[26px] min-h-screen">
+      <div className="relative">
+        {/* Hero Section */}
+        <div className="relative bg-gradient-to-r from-[#2F3E1D] to-[#556B2F] h-[280px] md:h-[350px] flex items-center">
+          <div className="px-8 md:px-16">
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white">
+              Experience
+            </h1>
+
+            <div className="w-28 h-1 bg-[#DCCCA3] mt-4 rounded-full"></div>
+
+            <p className="text-[#F8F5EC] text-lg md:text-xl mt-4 italic">
+              Academic • Research • Innovation Journey
+            </p>
+          </div>
+        </div>
+
+        <div className="absolute inset-0 bg-black/30"></div>
+        {/* Research Focus */}
+        <div className="hidden lg:block absolute right-16 top-1/2 -translate-y-1/2">
+          <div className="bg-white/10 backdrop-blur-sm border border-[#DCCCA3]/40 rounded-2xl p-6 w-[320px]">
+            <h3 className="text-[#DCCCA3] text-xl font-bold mb-4">
+              Current Research Areas
+            </h3>
+
+            <ul className="space-y-3 text-white">
+              <li>• Additive Manufacturing</li>
+              <li>• Bone Tissue Engineering</li>
+              <li>• Biomaterials</li>
+              <li>• Medical Device Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       {/* Content Section */}
       <div className="pt-2 px-4 sm:px-8 lg:px-16">
         <div>
-          <Heading title="Experience" />
-
           {/* IIT Bombay Experience */}
-          <div className="flex flex-col-reverse lg:flex-row gap-6 my-8">
+          <div className="bg-white rounded-3xl shadow-lg border border-[#DCCCA3] p-6 my-10 flex flex-col-reverse lg:flex-row gap-8 hover:shadow-2xl transition-all duration-300">
             {/* Left Image */}
             <div className="lg:w-1/2 flex justify-center">
               <img
-                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                className="w-full h-[320px] object-cover rounded-3xl shadow-xl border border-[#DCCCA3]"
                 src="/photos/iitbombay2nd.jpg"
                 alt="IIT Bombay"
               />
@@ -33,12 +58,12 @@ const page = () => {
             <div className="lg:w-1/2">
               <div className="flex items-center gap-2 mt-3">
                 <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
-                <div className="font-bold text-lg sm:text-xl">
+                <div className="font-bold text-2xl text-[#3E4A24]">
                   Institute Post Doc Fellow (IPDF)
                 </div>
               </div>
 
-              <div className="ml-8 text-sm sm:text-base">
+              <div className="ml-8 text-sm sm:text-base text-gray-600 italic">
                 Indian Institute of Technology (IIT) Bombay | [August 2025 -
                 Present]
               </div>
@@ -48,20 +73,19 @@ const page = () => {
               </div>
             </div>
           </div>
-          
 
           {/* IISc Bangalore Experience */}
-          <div className="flex flex-col lg:flex-row gap-6 my-8">
+          <div className="bg-white rounded-3xl shadow-lg border border-[#DCCCA3] p-6 my-10 flex flex-col lg:flex-row gap-8 hover:shadow-2xl transition-all duration-300">
             {/* Left Content */}
             <div className="lg:w-1/2">
               <div className="flex items-center gap-2 mt-3">
                 <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
-                <div className="font-bold text-lg sm:text-xl">
+                <div className="font-bold text-lg sm:text-xl text-[#3E4A24]">
                   Project Associate
                 </div>
               </div>
 
-              <div className="ml-8 text-sm sm:text-base">
+              <div className="ml-8 text-sm sm:text-base italic">
                 Indian Institute of Science (IISc), Bangalore | [February 2025 -
                 May 2025]
               </div>
@@ -74,7 +98,7 @@ const page = () => {
             {/* Right Image */}
             <div className="lg:w-1/2 flex justify-center">
               <img
-                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                className="w-full h-[320px] object-cover rounded-3xl shadow-xl border border-[#DCCCA3]"
                 src="/iisc bangalore.jpg"
                 alt="IISc Bangalore"
               />
@@ -82,16 +106,16 @@ const page = () => {
           </div>
 
           {/* First Experience Section */}
-          <div className="flex flex-col lg:flex-row gap-6 my-8">
+          <div className="bg-white rounded-3xl shadow-lg border border-[#DCCCA3] p-6 my-10 flex flex-col lg:flex-row gap-8 hover:shadow-2xl transition-all duration-300">
             {/* Left Column */}
             <div className="lg:w-1/2">
               <div className="flex items-center gap-2 mt-3">
                 <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
-                <div className="font-bold text-lg sm:text-xl">
+                <div className="font-bold text-lg sm:text-xl text-[#3E4A24]">
                   Manager (Research and Development)
                 </div>
               </div>
-              <div className="ml-8 text-sm sm:text-base">
+              <div className="ml-8 text-sm sm:text-base italic">
                 IIITD Innovation & Incubation Center, Delhi | [September
                 2023-November 2024]
               </div>
@@ -109,7 +133,7 @@ const page = () => {
             {/* Right Column */}
             <div className="lg:w-1/2 flex justify-center">
               <img
-                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                className="w-full h-[320px] object-cover rounded-3xl shadow-xl border border-[#DCCCA3]"
                 src="iiitdelhi.jpg"
                 alt="IIIT Delhi"
               />
@@ -117,11 +141,11 @@ const page = () => {
           </div>
 
           {/* Second Experience Section */}
-          <div className="flex flex-col-reverse lg:flex-row gap-6 my-8">
+          <div className="bg-white rounded-3xl shadow-lg border border-[#DCCCA3] p-6 my-10 flex flex-col-reverse lg:flex-row gap-8 hover:shadow-2xl transition-all duration-300">
             {/* Left Column */}
             <div className="lg:w-1/2 flex justify-center">
               <img
-                className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
+                className="w-full h-[320px] object-cover rounded-3xl shadow-xl border border-[#DCCCA3]"
                 src="iiitdmj.jpg"
                 alt="IIITDM Jabalpur"
               />
@@ -131,11 +155,11 @@ const page = () => {
             <div className="lg:w-1/2">
               <div className="flex items-center gap-2 mt-3">
                 <img src="icons/flower.svg" alt="Icon" className="w-6 h-6" />
-                <div className="font-bold text-lg sm:text-xl">
+                <div className="font-bold text-lg sm:text-xl text-[#3E4A24]">
                   Teaching Assistantship and Lab Experience
                 </div>
               </div>
-              <div className="ml-8 text-sm sm:text-base">
+              <div className="ml-8 text-sm sm:text-base italic">
                 Indian Institute of Information Technology, Design &
                 Manufacturing, Jabalpur | [June 2019-Dec 2023]
               </div>
@@ -155,7 +179,7 @@ const page = () => {
         {/* Positions of Responsibility Section */}
         <div className="my-6">
           <Heading title="Positions of Responsibility" />
-          <div className="my-3 py-6 px-3 bg-[#d5e3f3] rounded-md space-y-2">
+          <div className="my-6 py-8 px-6 bg-white border border-[#DCCCA3] rounded-3xl shadow-lg space-y-3">
             <Bullets title="Managing “Design & Innovation Lab” at IIITD, Delhi (August 2023-Present)." />
             <Bullets title="Establishment and management, “Drone Innovation Lab (DIL)” at IIITD-IC (March 2023-Present)." />
             <Bullets title="Handling all CAD modelling and Additive manufacturing projects at “Fused Filament Fabrication (FFF) Lab”, IIITDM Jabalpur (November 2019-August 2022)." />

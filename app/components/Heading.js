@@ -5,7 +5,7 @@ const Heading = (props) => {
     <div>
       <div className="flex gap-2">
         <img className="w-" src="icons/summary.svg" alt="" />
-        <h1 className="font-bold text-3xl text-[#013571]">{props.title}</h1>
+        <h1 className="font-bold text-3xl text-[#3E4A24]">{props.title}</h1>
       </div>
     </div>
   )
