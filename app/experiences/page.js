@@ -5,7 +5,7 @@ import Bullets from "../components/Bullets";
 
 const page = () => {
   return (
-    <div className="bg-white pt-[26px] min-h-[70vh]">
+    <div className="bg-[#F8F5EC] pt-[26px] min-h-screen">
       {/* Image Header */}
       <img
         className="w-full h-[180px] md:h-[250px] lg:h-[300px] object-cover"
@@ -24,7 +24,7 @@ const page = () => {
             <div className="lg:w-1/2 flex justify-center">
               <img
                 className="rounded-full w-[300px] sm:w-[400px] lg:w-[700px]"
-                src="/iit bombay.jpg"
+                src="/photos/iitbombay2nd.jpg"
                 alt="IIT Bombay"
               />
             </div>
@@ -44,7 +44,7 @@ const page = () => {
               </div>
 
               <div className="my-3 space-y-2">
-                <Bullets title="Material formulation, design and bio-fabrication of composite scaffolds for Bone Tissue Engineering (BTE)." />
+                <Bullets title="Material formulation, rheology, 3D-printing, design and bio-fabrication of composite scaffolds for Bone Tissue Engineering (BTE)." />
               </div>
             </div>
           </div>
