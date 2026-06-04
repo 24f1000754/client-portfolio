@@ -1,90 +1,131 @@
-import React from 'react'
-import Heading from '../components/Heading'
+import React from "react";
+import Heading from "../components/Heading";
 
 const page = () => {
   return (
-    <div className='pt-[56px] min-h-[100vh]'>
-      {/* Responsive Image */}
-      <img className="md:w-[100vw] md:h-[80vw] lg:w-full lg:h-auto object-cover h-[100vw] w-[100vw]" src="projects.jpg" alt="no image" />
+    <div className="pt-[56px] min-h-screen bg-[#F8F4E9]">
 
-      <div className="pt-2 px-4 sm:px-6 md:px-8 lg:mx-8">
-        <div>
-          <Heading title="Academic Projects undertaken" />
-        </div>
+      {/* Hero Section */}
+      <div className="relative">
+        <img
+          src="/projects.jpg"
+          alt="Projects"
+          className="w-full h-[35vh] md:h-[45vh] object-cover"
+        />
 
-        <div className="mx-4 sm:mx-6 lg:mx-[38px]">
-          <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4">
-            {/* Doctoral Thesis Title */}
-            <div className="font-bold my-3">Doctoral Thesis Title</div>
-            <div className="font-bold my-3">
-              Design and Development of 3D-Printed Bioactive Bone Scaffolds with Improved Mechanical Strength
-            </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/20 flex items-center">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#F8F4E9]">
+              Projects
+            </h1>
 
-            {/* Description */}
-            <div className="font-bold my-1">Description</div>
-            <div className="my-1">
-              We have developed osteoconductive feedstock suitable for fused filament fabrication (FFF) techniques to fabricate patient-specific bone scaffolds for tissue engineering applications...
-            </div>
+            <div className="w-28 h-1 bg-[#556B2F] mt-4 rounded-full"></div>
 
-            {/* Ph.D. Highlights */}
-            <div className="font-bold my-3">Ph.D. Highlights</div>
-            <div className="my-3">
-              Worked on the following national and international sponsored projects during my Ph.D. tenure:
-            </div>
-
-            {/* Project 1 */}
-            <div className="my-1"></div>
-            <div className="my-1 flex gap-2">
-              <img className="w-10 h-10" src="icons/arrow2.svg" alt="" />
-              <div>
-                “Bioactive Hybrid Scaffold Manufacturing via Surface Modification of 3D-printed Hydrophobic Scaffolds” as <b>Start-up Research Grant...</b>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className="my-1"></div>
-            <div className="my-1 flex gap-2">
-              <img className="w-10 h-10" src="icons/arrow2.svg" alt="" />
-              <div>
-                “Biomimetic Bone Scaffold of Tailored Radial Porosity Gradient using Fused Deposition Manufacturing” as Research Scholar Grant...
-              </div>
-            </div>
-
-            {/* M. Tech */}
-            <div className="font-bold my-3">M. Tech</div>
-            <div className="font-bold my-3">
-              Design and Development of Scaffold using 3D Printing
-            </div>
-
-            {/* M. Tech Duration */}
-            <div className="font-bold my-3">Duration</div>
-            <div className="my-3">6 Months</div>
-
-            {/* M. Tech Description */}
-            <div className="font-bold my-3">Description</div>
-            <div className="my-3">
-              We designed and developed porous structures of varying porosity...
-            </div>
-
-            {/* B.E */}
-            <div className="font-bold my-3">B.E</div>
-            <div className="my-3">Design and Fabrication of Treadmill Bike</div>
-
-            {/* B.E Duration */}
-            <div className="font-bold my-3">Duration</div>
-            <div className="my-3">1 Year</div>
-
-            {/* B.E Description */}
-            <div className="font-bold my-3">Description</div>
-            <div className="my-3">
-              A treadmill bike is basically an electric bike equipped with a treadmill...
-            </div>
+            <p className="text-gray-300 mt-4 text-lg">
+              Research projects, academic work and innovation contributions.
+            </p>
           </div>
         </div>
       </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-12">
+
+        <Heading title="Academic Projects Undertaken" />
+
+        {/* PhD Project */}
+        <div className="mt-8 bg-white rounded-3xl shadow-xl border border-[#DDD6C8] p-8 hover:shadow-2xl transition-all duration-300">
+
+          <div className="inline-block bg-[#556B2F] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            Doctoral Research
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A]">
+            Design and Development of 3D-Printed Bioactive Bone Scaffolds with Improved Mechanical Strength
+          </h2>
+
+          <p className="mt-5 text-gray-700 leading-relaxed">
+            We developed osteoconductive feedstock suitable for fused filament
+            fabrication (FFF) techniques to fabricate patient-specific bone
+            scaffolds for tissue engineering applications.
+          </p>
+
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold text-[#556B2F] mb-4">
+              Research Highlights
+            </h3>
+
+            <div className="space-y-4">
+
+              <div className="bg-[#FAF8F2] border border-[#E7E1D5] p-5 rounded-2xl">
+                <p>
+                  Bioactive Hybrid Scaffold Manufacturing via Surface
+                  Modification of 3D-Printed Hydrophobic Scaffolds under
+                  Start-up Research Grant.
+                </p>
+              </div>
+
+              <div className="bg-[#FAF8F2] border border-[#E7E1D5] p-5 rounded-2xl">
+                <p>
+                  Biomimetic Bone Scaffold of Tailored Radial Porosity Gradient
+                  using Fused Deposition Manufacturing under Research Scholar
+                  Grant.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        {/* M.Tech */}
+        <div className="mt-10 bg-[#1A1A1A] rounded-3xl shadow-xl p-8 text-white">
+
+          <div className="inline-block bg-[#556B2F] px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            M.Tech Project
+          </div>
+
+          <h2 className="text-2xl font-bold">
+            Design and Development of Scaffold using 3D Printing
+          </h2>
+
+          <div className="mt-4 text-[#C9D6A3] font-semibold">
+            Duration: 6 Months
+          </div>
+
+          <p className="mt-5 text-gray-300 leading-relaxed">
+            Designed and developed porous structures of varying porosity using
+            advanced 3D printing techniques to enhance scaffold performance for
+            engineering and biomedical applications.
+          </p>
+
+        </div>
+
+        {/* BE Project */}
+        <div className="mt-10 bg-white rounded-3xl shadow-xl border border-[#DDD6C8] p-8 hover:shadow-2xl transition-all duration-300">
+
+          <div className="inline-block bg-[#556B2F] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            B.E Project
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#1A1A1A]">
+            Design and Fabrication of Treadmill Bike
+          </h2>
+
+          <div className="mt-4 text-[#556B2F] font-semibold">
+            Duration: 1 Year
+          </div>
+
+          <p className="mt-5 text-gray-700 leading-relaxed">
+            A treadmill bike is an innovative transportation concept that
+            combines walking and cycling. The project focused on design,
+            fabrication and testing of a treadmill-operated bicycle system.
+          </p>
+
+        </div>
+
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
-
+export default page;
